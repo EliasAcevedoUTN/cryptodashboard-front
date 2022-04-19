@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background-image: url("assets/images/bitcoin-criptomonedas.jpg");
+    background-attachment: fixed;
+}
+
+/*body::after {
+    content: "";
+    background: url("assets/images/bitcoin-criptomonedas.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+}*/

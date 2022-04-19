@@ -1,0 +1,22 @@
+<app-head [usuario]="usuario_nombre"></app-head>
+<div class="container">
+    <div>
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Compra las criptomonedas mas vendidas del mercado!!</h1>
+        </div>
+        <div class="d-flex  justify-content-around row">
+            <div *ngFor="let moneda of assetsMayores" class="card bg-color text-white m-3" style="width: 30%;">
+                <img *ngIf="!moneda.url_imagen" class="card-img-top" src="../../../assets/images/icons8-en-alza-64.png"
+                    alt="logo de {{moneda.name}}" style="width: 100%;">
+                <img *ngIf="moneda.url_imagen" class="card-img-top" src="{{moneda.url_imagen}}"
+                    alt="logo de {{moneda.name}}" style="width: 100%;">
+                <div class="card-body">
+                    <div class="card-title">Moneda: {{moneda.name}}</div>
+                    <p class="card-text">Volumen manejado en el mes: U$S {{moneda.volume_1mth_usd}}</p>
+                </div>
+                <a class="btn btn-block btn-success mb-3" (click)="comprar(moneda.asset_id)">Adquirir moneda!</a>
+
+            </div>
+        </div>
+    </div>
+</div>

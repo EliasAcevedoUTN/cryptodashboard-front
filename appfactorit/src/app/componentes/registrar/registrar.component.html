@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="m-5">
+        <form class="custom-form" method="post">
+          <h1>Registrar nuevo usuario</h1>
+          <br>
+          <p>Nombre</p><input type="text"  [(ngModel)]="nombre"  name="nombre"  placeholder="Nombre"  required="required" />
+          <p>Apellido</p>
+          <input type="text" [(ngModel)]="apellido" name="apellido" placeholder="Apellido" required="required" />
+          <p>Usuario</p>
+          <input type="text" [(ngModel)]="usuario" name="usuario" placeholder="Usuario" required="required" />
+          <p>Email</p>
+          <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required="required" />
+          <p>Contraseña</p>
+          <input type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required="required" />
+          <button type="submit" (click)="register()">Registrarse</button>
+        </form>
+      </div>
+</div>

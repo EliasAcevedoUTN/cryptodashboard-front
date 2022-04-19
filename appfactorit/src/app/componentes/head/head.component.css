@@ -1,0 +1,25 @@
+.contenedor {
+    height: auto;
+    background-color: #4c504e;
+    width: 100%;
+}
+.imagen {
+    width: 65px;
+    height: auto;
+}
+
+
+/*.contenedor > div {
+    background-color: inherit;
+    width: 250px;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contenedor img {
+    width: 35px;
+    height: auto;
+
+}*/
+
